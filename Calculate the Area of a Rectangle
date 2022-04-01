@@ -1,0 +1,16 @@
+#This program calculates the area of a rectangle
+
+print("Welcome to the Area Rectangle Calculator.")
+#length of the rectangle as a float
+length = float(input("Please enter the length of the rectangle: "))
+
+#width of the rectangle as a float
+width = float(input("Please enter the width of the rectangle: "))
+
+#unit of measurement
+unit_of_measurement = input("Please enter the unit of measurement: ")
+
+#formula to calculate area
+area = length * width
+
+print(f"The area of your rectangle is: {area}" + "{}\u00b2".format(unit_of_measurement))
