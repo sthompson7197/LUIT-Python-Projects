@@ -1,0 +1,25 @@
+#Random Number Generator
+#This generator asks the user to input a number. The program will respond if the inputted number is higher or lower than the random integer.
+
+import random
+
+#number is equal to a random generated number between 0 and 100
+number = random.choice(range(0, 100))
+
+
+#user inputs a number
+guess = int(input("Please enter a number: "))
+
+#loops through code while number is not equal to guess.
+while number != guess:
+  if number > guess:
+    print("Your guess is lower than the random integer.")
+  elif number < guess:
+    print("Your guess is higher than the random integer.")
+
+#asks user to input a new number if condition is still true.
+  guess = int(input("Please enter a new number: "))
+
+if guess == number:
+  print("You have guessed the correct number!")
+  
