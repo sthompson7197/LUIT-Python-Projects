@@ -1,0 +1,8 @@
+import random
+#creates list ranging in numbers 0 to 19
+l = [*range(0,20, 1)]
+
+random.shuffle(l)
+
+for number in list(l):
+  print(number)
