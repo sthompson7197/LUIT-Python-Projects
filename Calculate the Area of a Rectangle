@@ -1,11 +1,22 @@
-#This program calculates the area of a rectangle
+#This program calculates the area of a rectangle. Error handling and while loop added.
 
 print("Welcome to the Area Rectangle Calculator.")
-#length of the rectangle as a float
-length = float(input("Please enter the length of the rectangle: "))
 
-#width of the rectangle as a float
-width = float(input("Please enter the width of the rectangle: "))
+while True:
+  try:
+    length = float(input("Please enter the length of the rectangle: "))
+  except ValueError:
+    print("You have entered an invalid input.")
+  else:
+    break
+
+while True:
+  try:
+    width = float(input("Please enter the width of the rectangle: "))
+  except ValueError:
+    print("You have entered an invalid input.")
+  else:
+    break
 
 #unit of measurement
 unit_of_measurement = input("Please enter the unit of measurement: ")
