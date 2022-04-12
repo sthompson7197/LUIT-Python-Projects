@@ -1,0 +1,10 @@
+# Allow user to input their First Name and assign that input to a variable
+first_name = input("Please enter your first name: ")
+
+
+# Allow user to input their Last Name and assign that input to a variable
+last_name = input("Please enter your last name: ")
+
+
+# Print a welcome message that includes the user's First Name and Last Name using the variables.
+print("Hello " + first_name + " " + last_name + "!")
